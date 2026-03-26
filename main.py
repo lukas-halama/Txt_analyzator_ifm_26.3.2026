@@ -27,4 +27,8 @@ garpike and stingray are also present.'''
 ]
 
 
+jmeno = input("zadej uzivatelske jmeno: ")
+heslo = input("zadej heslo: ")
 
+if jmeno in ["bob", "ann", "mike", "liz"]
+    
