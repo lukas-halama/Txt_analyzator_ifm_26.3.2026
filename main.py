@@ -26,9 +26,40 @@ in modern oceans. Other fish such as paddlefish,
 garpike and stingray are also present.'''
 ]
 
+'''
++------+-------------+
+| user | password |
++------+-------------+
+| bob | 123 |
+| ann | pass123 |
+| mike | password123 |
+| liz | pass123 |
++------+-------------+
 
+'''
 jmeno = input("zadej uzivatelske jmeno: ")
 heslo = input("zadej heslo: ")
 
-if jmeno in ["bob", "ann", "mike", "liz"]
+users = {
+    "bob": "123",
+    "ann": "pass123",
+    "mike": "password123",
+    "liz": "pass123",
+}
+
+if users.get(jmeno) == heslo:
+    print("vstup povolen")
+else:
+    print("neplatne heslo nebo jmeno")
+
+def count_words(text):
+    words = text.split()
+    return len(words)
+
+def count_titlecase(text):
+    words = text.split()
+    titlecase_count = sum(1 for word in words if word.istitle())
+    return titlecase_count
+
+
     
